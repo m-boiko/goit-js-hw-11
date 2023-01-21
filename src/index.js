@@ -2,7 +2,7 @@ import Notiflix from 'notiflix';
 import NewApiImageService from './search';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import './sass/styles.css';
+import './sass/index.scss';
 
 const formEl = document.querySelector('.search-form');
 const divEl = document.querySelector('.gallery');
@@ -48,11 +48,11 @@ async function fetchImages() {
   if (isShown < total) {
     loadMoreBtn.classList.remove('is-hidden');
   }
-  //   if (isShown === total) {
-  //     Notiflix.Notify.info(
-  //       `We are sorry, but you have reached the end of search results.`
-  //     );
-  //   }
+  if (isShown >= total) {
+    Notiflix.Notify.info(
+      `We are sorry, but you have reached the end of search results.`
+    );
+  }
 }
 
 function renderGallery(elements) {
