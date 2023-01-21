@@ -10,7 +10,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background: rgb(74, 22, 22);
-  background: linear-gradient(223deg, rgb(28, 95, 37) 0%, rgb(145, 190, 145) 48%, rgb(45, 151, 86) 100%);
+  background: linear-gradient(223deg, rgb(28, 95, 37) 1%, rgb(145, 190, 145) 48%, rgb(45, 151, 86) 100%);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
