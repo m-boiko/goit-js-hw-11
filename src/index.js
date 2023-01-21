@@ -2,7 +2,7 @@ import Notiflix from 'notiflix';
 import NewApiImageService from './search';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
-import '../src/sass/styles.scss';
+import './sass/styles.css';
 
 const formEl = document.querySelector('.search-form');
 const divEl = document.querySelector('.gallery');
