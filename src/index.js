@@ -48,11 +48,11 @@ async function fetchImages() {
   if (isShown < total) {
     loadMoreBtn.classList.remove('is-hidden');
   }
-  if (isShown >= total) {
-    Notiflix.Notify.info(
-      `We are sorry, but you have reached the end of search results.`
-    );
-  }
+  //   if (isShown === total) {
+  //     Notiflix.Notify.info(
+  //       `We are sorry, but you have reached the end of search results.`
+  //     );
+  //   }
 }
 
 function renderGallery(elements) {
